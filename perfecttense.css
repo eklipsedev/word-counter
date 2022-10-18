@@ -1,0 +1,678 @@
+.correction {
+  pointer-events: none !important;
+  width: 100%;
+  text-align: center !important;
+  text-decoration: none !important;
+  padding-bottom: 0px !important;
+  background-size: 100% 2px;
+  left: 0 !important;
+  top: 0 !important;
+  position: absolute !important;
+  z-index: auto !important;
+  display: inline-flex;
+  transition: 0.2s;
+}
+
+.correction:after {
+  position: absolute !important;
+  pointer-events: none !important;
+  content: "" !important;
+  display: block !important;
+  opacity: 0 !important;
+  transition: 0.2s;
+  width: 100% !important;
+  height: 100% !important;
+  left: 0 !important;
+  bottom: 0px !important;
+}
+
+.correction:before {
+  content: "" !important;
+  position: absolute !important;
+  width: 100% !important;
+  height: 2px !important;
+  opacity: 0.5 !important;
+  left: 0 !important;
+  bottom: 0px !important;
+}
+
+.correction.correction-replacement:before,
+.correction.correction-suggestion:before {
+  background-color: #ff4d4d !important;
+}
+
+.correction.correction-replacement:after,
+.correction.correction-suggestion:after {
+  background-color: #ff4d4d !important;
+}
+
+.correction.correction-replacement.correction-highlighted:after,
+.correction.correction-suggestion.correction-highlighted:after {
+  opacity: 0.3 !important;
+}
+
+.correction-thin.correction:before {
+  height: 2px !important;
+}
+
+.correction-thick.correction:before {
+  height: 3px !important;
+}
+
+.correction-hidden.correction.perfecttense-general {
+  visibility: hidden !important;
+}
+.perfecttense-general {
+  margin: 0px !important;
+  align-content: normal !important;
+  align-items: normal !important;
+  backface-visibility: visible !important;
+  background-attachment: scroll !important;
+  background-blend-mode: normal !important;
+  background-clip: border-box !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  background-origin: padding-box !important;
+  background-position-x: 0% !important;
+  background-position-y: 0% !important;
+  box-shadow: none !important;
+  caption-side: top !important;
+  clear: none !important;
+  clip-path: none !important;
+  clip-rule: nonzero !important;
+  color-interpolation-filters: linearrgb !important;
+  column-fill: balance !important;
+  column-gap: normal !important;
+  column-rule-color: rgb(134, 134, 134) !important;
+  column-rule-style: none !important;
+  column-rule-width: 0px !important;
+  column-span: none !important;
+  contain: none !important;
+  content: normal !important;
+  counter-increment: none !important;
+  counter-reset: none !important;
+  empty-cells: show !important;
+  fill: rgb(0, 0, 0) !important;
+  fill-opacity: 1 !important;
+  fill-rule: nonzero !important;
+  filter: none !important;
+  flex-direction: row !important;
+  flex-grow: 0 !important;
+  flex-shrink: 1 !important;
+  flex-wrap: nowrap !important;
+  float: none !important;
+  flood-color: rgb(0, 0, 0) !important;
+  flood-opacity: 1 !important;
+  font-feature-settings: normal !important;
+  font-kerning: auto !important;
+  font-stretch: 100% !important;
+  font-style: normal !important;
+  font-variant-caps: normal !important;
+  font-variant-east-asian: normal !important;
+  font-variant-ligatures: normal !important;
+  font-variant-numeric: normal !important;
+  font-variation-settings: normal !important;
+  grid-auto-flow: row !important;
+  grid-template-areas: none !important;
+  grid-template-columns: none !important;
+  grid-template-rows: none !important;
+  hyphens: manual !important;
+  justify-content: normal !important;
+  justify-items: normal !important;
+  letter-spacing: normal !important;
+  lighting-color: rgb(255, 255, 255) !important;
+  list-style-image: none !important;
+  list-style-position: outside !important;
+  list-style-type: disc !important;
+  margin-block-end: 0px !important;
+  margin-block-start: 0px !important;
+  margin-inline-end: 0px !important;
+  margin-inline-start: 0px !important;
+  marker-end: none !important;
+  marker-mid: none !important;
+  marker-start: none !important;
+  mask: none !important;
+  mask-type: luminance !important;
+  max-block-size: none !important;
+  max-height: none !important;
+  max-inline-size: none !important;
+  max-width: none !important;
+  min-block-size: 0px !important;
+  min-height: 0px !important;
+  min-inline-size: 0px !important;
+  min-width: 0px !important;
+  mix-blend-mode: normal !important;
+  object-fit: fill !important;
+  object-position: 50% 50% !important;
+  offset-distance: 0px !important;
+  offset-path: none !important;
+  opacity: 1 !important;
+  order: 0 !important;
+  orphans: 2 !important;
+  outline-offset: 0px !important;
+  outline-style: none !important;
+  outline-width: 0px !important;
+  paint-order: normal !important;
+  perspective: none !important;
+  perspective-origin: 0px 0px !important;
+  row-gap: normal !important;
+  scroll-margin-block-end: 0px !important;
+  scroll-margin-block-start: 0px !important;
+  scroll-margin-bottom: 0px !important;
+  scroll-margin-inline-end: 0px !important;
+  scroll-margin-inline-start: 0px !important;
+  scroll-margin-left: 0px !important;
+  scroll-margin-right: 0px !important;
+  scroll-margin-top: 0px !important;
+  scroll-snap-align: none !important;
+  scroll-snap-stop: normal !important;
+  scroll-snap-type: none !important;
+  shape-image-threshold: 0 !important;
+  shape-margin: 0px !important;
+  shape-outside: none !important;
+  stop-color: rgb(0, 0, 0) !important;
+  stop-opacity: 1 !important;
+  stroke: none !important;
+  stroke-dasharray: none !important;
+  stroke-dashoffset: 0px !important;
+  stroke-linecap: butt !important;
+  stroke-linejoin: miter !important;
+  stroke-miterlimit: 4 !important;
+  stroke-opacity: 1 !important;
+  stroke-width: 1px !important;
+  text-anchor: start !important;
+  text-combine-upright: none !important;
+  text-indent: 0px !important;
+  text-orientation: mixed !important;
+  text-overflow: clip !important;
+  text-shadow: none !important;
+  text-transform: none !important;
+  transform-box: view-box !important;
+  transform-origin: 0px 0px !important;
+  transform-style: flat !important;
+  transition-delay: 0s !important;
+  transition-duration: 0s !important;
+  transition-property: all !important;
+  transition-timing-function: ease !important;
+  unicode-bidi: normal !important;
+  vertical-align: baseline !important;
+  visibility: visible !important;
+  white-space: normal !important;
+  widows: 2 !important;
+  word-break: normal !important;
+  word-spacing: 0px !important;
+  writing-mode: horizontal-tb !important;
+  zoom: 1 !important;
+}
+
+div.perfecttense-general,
+div.perfecttense-mirror-el,
+div.perfecttense-correction-card-container {
+  display: block !important;
+}
+
+.perfecttense-general small {
+  font-size: smaller !important;
+}
+
+.perfecttense-general svg {
+  width: 1em !important;
+  height: 1em !important;
+  border: 0px none transparent !important;
+  display: inline !important;
+}
+
+div.perfecttense-mirror-el,
+div.perfecttense-correction-card-container {
+  position: static !important;
+}
+.pt-correction-card-container {
+  z-index: 2147483647 !important;
+  pointer-events: all !important;
+  top: 0px !important;
+  left: 0px !important;
+  position: absolute !important;
+  background: transparent !important;
+  transition: opacity 0.5s ease-in !important;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 25px !important;
+  font-weight: 300 !important;
+  width: 200px !important;
+  background-clip: content-box !important;
+  border-top: 5px solid rgba(255, 0, 0, 0) !important;
+  border-bottom: 5px solid rgba(255, 0, 0, 0) !important;
+}
+
+/*new design*/
+div.pt-correction-card-container .pt-correction-card-options {
+  display: inline-flex !important;
+  position: absolute !important;
+  bottom: -20px !important;
+  left: -9px !important;
+  padding-bottom: 1px !important;
+}
+div.pt-correction-card-container .pt-correction-card-line {
+  display: flex !important;
+}
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-sup-line {
+  position: absolute !important;
+  bottom: 24px !important;
+  padding-bottom: 3px !important;
+  left: 0 !important;
+}
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item {
+  background: #ffffff !important;
+  color: #0aaaff !important;
+  border: 0.5px solid #0aaaff !important;
+  box-sizing: border-box !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08) !important;
+  border-radius: 2px !important;
+  height: 24px !important;
+  padding: 2px 8px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  margin: 1px !important;
+  transition: 0.3s !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-items: center !important;
+  position: relative !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+}
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item:first-child:before {
+  content: "" !important;
+  position: absolute !important;
+  display: block !important;
+  background-color: white !important;
+  bottom: -2.5px !important;
+  left: 10px !important;
+  width: 4px !important;
+  height: 4px !important;
+  border: 0.5px solid #0aaaff !important;
+  border-top: none !important;
+  border-right: none !important;
+  transform: rotate(-45deg) !important;
+  transition: 0.3s !important;
+}
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-sup-line
+  .pt-correction-card-item:first-child:before {
+  display: none !important;
+}
+
+/* more */
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item.pt-correction-card-more {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 24px !important;
+  padding: 2px !important;
+  padding-bottom: 10px !important;
+  color: #5a5d64 !important;
+  border-color: #afb3bd !important;
+  position: inherit !important;
+  cursor: default !important;
+}
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item.pt-correction-card-more:hover {
+  background-color: #afb3bd !important;
+  border: 0.5px solid #afb3bd !important;
+  color: white !important;
+}
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item.pt-correction-card-more:hover
+  .pt-correction-card-sup-line {
+  color: #0d0d0d !important;
+}
+
+.pt-correction-card-sup-line.show-sup-line {
+  display: flex !important;
+}
+
+.pt-correction-card-sup-line.hide-sup-line {
+  display: none !important;
+}
+
+/* trash */
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item.pt-correction-card-trash {
+  text-decoration: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 2px !important;
+  min-width: 24px !important;
+  color: white !important;
+  font-weight: 300 !important;
+  border-color: #afb3bd !important;
+  transition: 0s !important;
+}
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item.pt-correction-card-trash
+  span {
+  display: inline-block !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  transition: 0s !important;
+  padding-left: 0 !important;
+  font-size: 12px !important;
+  line-height: 20px !important;
+}
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item.pt-correction-card-trash
+  .perfecttense-general.hover-trash-icon {
+  display: none !important;
+  fill: none !important;
+}
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item.pt-correction-card-trash:hover {
+  background-color: #ff4d4d !important;
+  border: 0.5px solid #ff4d4d !important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item.pt-correction-card-trash:hover
+  span {
+  padding-left: 5px !important;
+  width: 40px !important;
+}
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item.pt-correction-card-trash:hover
+  .perfecttense-general.hover-trash-icon {
+  display: inline-block !important;
+  fill: none !important;
+}
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item.pt-correction-card-trash:hover
+  .perfecttense-general.default-trash-icon {
+  display: none !important;
+  fill: none !important;
+}
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item.pt-correction-card-trash
+  .perfecttense-general.default-trash-icon {
+  fill: none !important;
+}
+
+span.ignore-correction {
+  box-sizing: content-box !important;
+}
+
+/*  */
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item:hover {
+  color: #ffffff !important;
+  background: #0aaaff !important;
+  border: 0.5px solid #0aaaff !important;
+}
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item:first-child:hover:before {
+  background: #0aaaff !important;
+  border-color: #0aaaff !important;
+}
+
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item:first-child::before,
+div.pt-correction-card-container
+  .pt-correction-card-options
+  .pt-correction-card-item:first-child::before {
+  bottom: -3px !important;
+}
+.watermark-container {
+  position: absolute !important;
+  left: 0px !important;
+  top: 0px !important;
+  line-height: 1 !important;
+  z-index: auto;
+  pointer-events: all !important;
+}
+
+/*logo*/
+.perfecttense-general.watermark {
+  position: absolute !important;
+  border-radius: 25px !important;
+  display: flex !important;
+  height: 24px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  right: 10px !important;
+  bottom: 10px !important;
+  cursor: pointer !important;
+  border: 1px solid #0aaaff !important;
+  padding: 0px 5px !important;
+  width: 24px !important;
+  background-color: white !important;
+  box-sizing: border-box !important;
+}
+
+.perfecttense-general.watermark.small {
+  right: 0 !important;
+  bottom: 0 !important;
+  padding: 0 0 0 0 !important;
+}
+
+.perfecttense-general.watermark.small:not(:hover) {
+  border: 1px solid transparent !important;
+  height: 10px !important;
+  width: 10px !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background-color: transparent !important;
+  padding: 0 0 0 0 !important;
+}
+
+.perfecttense-general.watermark.small:hover {
+  border: 1px solid #0aaaff !important;
+  height: 30px !important;
+  width: 109px !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background-color: white !important;
+  padding: 0 0 0 0 !important;
+  padding-left: 15px !important;
+}
+
+.perfecttense-general.watermark .watermark-overlay {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 0 !important;
+  display: block !important;
+  border-radius: 25px !important;
+  z-index: 100 !important;
+  cursor: pointer !important;
+}
+
+.perfecttense-general.watermark:hover {
+  justify-content: space-between !important;
+  right: 5px !important;
+  bottom: 5px !important;
+  width: 109px !important;
+  height: 30px !important;
+  padding-left: 15px !important;
+}
+
+.perfecttense-general.watermark.alert {
+  border-color: #ff4d4d !important;
+}
+
+.perfecttense-general.watermark.alert svg.watermark-logo path,
+.perfecttense-general.watermark.alert svg.watermark-dot circle {
+  fill: #ff4d4d !important;
+}
+
+.perfecttense-general.watermark.corrected {
+  border-color: #00c67c !important;
+}
+
+.perfecttense-general.watermark.corrected svg.watermark-logo path,
+.perfecttense-general.watermark.corrected svg.watermark-dot circle {
+  fill: #00c67c !important;
+}
+
+.perfecttense-general.watermark .watermark-hovered {
+  width: 0px !important;
+  overflow: hidden !important;
+  transition: 0.2s !important;
+  display: none !important;
+}
+
+.perfecttense-general.watermark .watermark-hovered svg {
+  opacity: 0 !important;
+  width: 100% !important;
+  max-width: 63px !important;
+  transition: 0.2s !important;
+  height: 100% !important;
+  pointer-events: fill;
+}
+
+.perfecttense-general.watermark:hover .watermark-hovered svg {
+  opacity: 1 !important;
+}
+
+.perfecttense-general.watermark:hover .watermark-hovered {
+  width: 100% !important;
+  max-width: 63px !important;
+  display: inherit !important;
+}
+
+.perfecttense-general.watermark .watermark-logo {
+  width: 10px !important;
+  height: 17px !important;
+  position: relative !important;
+  right: auto !important;
+  bottom: auto !important;
+}
+
+.perfecttense-general.watermark:hover .watermark-logo {
+  width: 10px !important;
+  height: 17px !important;
+  position: absolute !important;
+  right: auto !important;
+  bottom: 2px !important;
+}
+
+.perfecttense-general.watermark.small:not(:hover) .watermark-logo {
+  display: none !important;
+}
+
+.perfecttense-general.watermark .watermark-dot {
+  border: none !important;
+  width: 10px !important;
+  height: 10px !important;
+  position: absolute !important;
+  right: 5px !important;
+  bottom: 5px !important;
+  pointer-events: all;
+  padding: 0 0 0 0 !important;
+}
+
+.perfecttense-general.watermark:hover .watermark-dot {
+  opacity: 0 !important;
+  height: 15px !important;
+  width: 15px !important;
+  right: 0px !important;
+  bottom: 0px !important;
+}
+
+.perfecttense-general.watermark:not(.small) .watermark-dot {
+  display: none !important;
+}
+
+.perfecttense-general.watermark.loading:hover .watermark-logo {
+  position: relative !important;
+  right: auto !important;
+  bottom: auto !important;
+}
+
+.perfecttense-general.watermark:hover .watermark-logo {
+  width: 14px !important;
+  height: 24px !important;
+  right: 8px !important;
+}
+
+.perfecttense-general.watermark.loading .watermark-hovered {
+  display: none !important;
+  border: none !important;
+}
+
+.perfecttense-general.watermark.loading {
+  width: 24px !important;
+  height: 24px !important;
+  border: none !important;
+}
+
+.perfecttense-general.watermark.loading div {
+  box-sizing: border-box !important;
+  display: block !important;
+  position: absolute !important;
+  width: 24px !important;
+  height: 24px !important;
+  left: 0 !important;
+  top: 0 !important;
+  border: 1px solid #0aaaff !important;
+  border-radius: 50% !important;
+  animation: lds-ring 1.2s linear infinite !important;
+  border-color: #0aaaff transparent transparent transparent !important;
+}
+
+.perfecttense-general.watermark.loading:hover .watermark-logo {
+  width: 10px !important;
+  height: 17px !important;
+}
+
+.perfecttense-general.watermark.loading:hover {
+  padding-left: 7px !important;
+  right: 10px !important;
+  bottom: 10px !important;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.watermark-hovered.hide {
+  display: none !important;
+}
